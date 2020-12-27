@@ -1,0 +1,28 @@
+body {
+    width: 400px;
+    margin: 100px auto;
+    font-family: sans-serif;
+}
+body#loginpage {
+   margin: 40px auto; 
+}
+main {
+    border: 1px solid silver;
+    padding: 20px 0 40px 0;
+    text-align: center;
+    background: #ededed;
+}
+button, input[type='submit'] {
+    width: 245px;
+    height: 45px;
+    background: #00B8E7;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+}
+input[type='text'], input[type='password'] {
+    width: 240px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}

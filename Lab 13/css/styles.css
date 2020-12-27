@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    width: 730px;
+}
+main {
+    padding: 0 2em 1em;
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 120%;
+}
+input[type="text"], select {
+    width: 20em;
+    padding: 5px 0;
+    margin-bottom: 1em;
+}
+input[type="checkbox"],[type="radio"] {
+    width: 1em;
+    margin-bottom: 1em;
+}
+input[type="button"] {
+    margin-top:10px;
+}
+#registration_info span {
+    color: red;
+}
+td {
+	width: 9em;	
+}

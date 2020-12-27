@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    width: 750px;
+    margin: 0 auto;
+    padding: 0 2em 1em;
+}
+
+h1 {
+    font-size: 150%;
+    margin-bottom: .5em;
+}
+
+label {
+    float: left;
+    width: 7em;
+}
+
+input {
+    width: 22em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#tasks {
+    margin-top: 0;
+    float: right;
+}

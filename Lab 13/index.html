@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 13: The Register Application</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Register for an Account</h1>
+        <form action="register_account.html" method="get" id="registration_form">
+            <strong>Email</strong><br>
+            <input type="text" id="email_address"><br>
+            <strong>Phone</strong><br>
+            <input type="text" id="phone"><br>
+            <strong>Country</strong><br>
+            <select id="country">
+                <option value="">Select an option</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+            </select><br>
+            <strong>Contact me by</strong><br>    
+            <input type="radio" name="contact" id="text" value="text" checked>Text
+            <input type="radio" name="contact" id="email" value="email">Email
+            <input type="radio" name="contact" id="none" value="none">Don't contact me
+            <br>
+            <strong>Terms of Service</strong><br>
+            <input type="checkbox" name="terms" id="terms" value="yes">I accept<br>
+            <input type="button" id="register" value="Register">
+            <input type="button" id="reset_form" value="Reset">
+        </form>
+        <h2 id="registration_header">&nbsp;</h2>
+        <table id="registration_info"></table>
+    </main>
+</body>
+</html>

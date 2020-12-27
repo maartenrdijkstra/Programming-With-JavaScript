@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Lab 11: The Login Popup Form</title>
+    <link href="./styles.css" rel="stylesheet">
+    <script>
+        function init() {
+            let width = 640;
+            let height = 480;
+            window.resizeTo(width, height);
+            window.moveTo(((window.screen.width - width) / 2), ((window.screen.height - height) / 2));
+
+            let login = document.getElementById("login");
+            login.addEventListener("click", function () {
+                let username = document.getElementById("username").value;
+                let password = document.getElementById("password").value;
+                let output = window.opener.document.getElementById("logindetails");
+                output.innerHTML = "<br><br>Username: " + username + "<br>Password: " + password;
+                window.close();
+            });
+        }
+
+        window.addEventListener("load", init);
+    </script>
+</head>
+<body id="loginpage">
+<h1>Account Access 567Log In</h1>
+<form id="accountlogin">
+    <strong>Username</strong><br>
+    <input id="username" type="text"><br>
+    <strong>Password</strong><br>
+    <input id="password" type="password">
+    <button id="login">Log In</button>
+</form>
+</body>
+</html>
